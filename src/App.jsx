@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
-import UserList from "./UserList";
+import WorkersList from "./WorkersList";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/users/:role" element={<UserList />} />
+          <Route path="/users/:role" element={<WorkersList />} />
         </Routes>
       </div>
     </Router>
